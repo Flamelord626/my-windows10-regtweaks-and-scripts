@@ -31,8 +31,6 @@ foreach ($package in $chocolateyPackages) {
 	choco install $package -y # "-y" probably isn't needed, but oh well.
 }
 
-iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 | iex
-
 [console]::beep(500,500)		# Beep when complete; a self reminder
 [console]::beep(500,500)
 [console]::beep(500,500)
